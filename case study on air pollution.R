@@ -170,7 +170,7 @@ par(mfrow = c(1,1))
 ?rep
 plot(rep(1999,52),mrg$value.x,xlim = c(1998,2013))
 points(rep(2012,52),mrg$value.y)
-?segments
+
 segments(x0 = rep(1999,52),y0 = mrg[,2],x1 = rep(2012,52), y1 = mrg[,3])
 
 mrg[,4] <- mrg[,3]-mrg[,2]
